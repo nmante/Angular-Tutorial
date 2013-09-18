@@ -25,6 +25,17 @@
 				#{{person.id}} {{person.name}}
 			</li>
 		</ul>
+
+		<ul>
+			<li ng-repeat="person in people" ng-show="person.live == true">
+				#{{person.id}} {{person.name}}
+			</li>
+		</ul>
+		<ul>
+			<li ng-repeat="person in people" ng-hide="person.live == false">
+				#{{person.id}} {{person.name}}
+			</li>
+		</ul>
 	</div>
 
 </body>

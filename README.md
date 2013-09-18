@@ -10,7 +10,8 @@ Essentially, AngularJS allows us to utilize the <u>M</u>odel <u>V</u>iew <u>C</u
 
 Include the necessary files in your webpage.  
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script type="text/javascript" 
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 
 ##Setup the page for AngularJS
 
@@ -181,3 +182,18 @@ The code above allows us to create a list of all the people in our model.  It th
 ###Hiding and showing elements
 
 Here we'll be using ng-show and ng-hide to demonstrate hiding and showing events.
+
+	<ul>
+		<li ng-repeat="person in people" ng-show="person.live == true">#{{person.id}} {{person.name}}</li>
+	</ul>
+	<ul>
+		<li ng-repeat="person in people" ng-show="person.live == false">
+			#{{person.id}} {{person.name}}
+		</li>
+	</ul>
+
+
+
+
+
+
